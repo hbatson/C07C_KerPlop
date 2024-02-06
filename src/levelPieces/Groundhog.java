@@ -31,7 +31,7 @@ public class Groundhog extends GamePiece implements Moveable{
         }
 	}
 
-    // the groundhog moves to a random board space
+    // the groundhog moves to a random open board space
 	@Override
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		Random rand = new Random();

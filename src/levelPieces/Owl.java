@@ -26,7 +26,7 @@ public class Owl extends GamePiece implements Moveable{
 		return InteractionResult.NONE;
 	}
 
-    // owl moves to a random board space
+    // owl moves to a random board space that is empty
 	@Override
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		Random rand = new Random();

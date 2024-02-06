@@ -1,0 +1,31 @@
+Requirements met:
+
+1. At least 5 pieces that interact using one of each type of interaction:
+	All extend GamePiece
+	-Hit: Cannon piece hits player for 1 damage point
+	-Kill: Groundhog piece kills player if it is landed on
+	-Advance: Ring piece advances player when player lands on it
+	-Get_Point: Wizard piece gives the player a point if landed on
+	-None: Owl piece does not affect player when interacted with
+	
+2. At least one piece should interact at a distance:
+	Cannon piece interacts with the player if the player comes within three 
+	spaces of the piece
+	
+3. At most 3 pieces can interact only when on the same square
+	-Groundhog
+	-Ring
+	-Wizard
+	These are the only three pieces that interact with a player when on
+	the same square
+	
+4. At least two pieces that move. 2 different moving algorithms. 1 random algorithm.
+	-Groundhog and Owl both implement Moveable interface and use a random movement
+		algorithm
+	-Wizard also implements Moveable interface but uses the players location to
+		determine when it should move and by how much.
+		
+5. At least 1 piece should only be Drawable (i.e., not a GamePiece):
+	-Tree piece does not extend GamePiece and only implements drawable interface
+	
+	
