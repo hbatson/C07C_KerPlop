@@ -7,7 +7,7 @@ import gameEngine.Moveable;
 
 public class Wizard extends GamePiece implements Moveable{
 
-	public Wizard(char symbol, String label, int location) {
+	public Wizard(int location) {
 		super('W', "Wizard - (Special character)", location);
 	}
 
