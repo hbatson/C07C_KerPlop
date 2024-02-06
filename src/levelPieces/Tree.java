@@ -1,18 +1,24 @@
 package levelPieces;
 
 import gameEngine.Drawable;
-import gameEngine.InteractionResult;
 
-public class Tree extends GamePiece{
+public class Tree implements Drawable{
+	
+	private char symbol;
+	private int location;
 	
 	public Tree(int location) {
-		super('T', "Tree - (Adds scenery. Does nothing)", location);
-		// TODO Auto-generated constructor stub
+		this.location = location;
+		this.symbol = 'T';
 	}
 
 	@Override
-	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		return InteractionResult.NONE;
+	public void draw() {
+		System.out.println(symbol);
 	}
-
+	
+	public int getLocation() {
+		return location;
+	}
+	
 }
