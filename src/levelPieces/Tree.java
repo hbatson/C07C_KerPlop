@@ -6,7 +6,7 @@ import gameEngine.InteractionResult;
 public class Tree extends GamePiece{
 	
 	public Tree(int location) {
-		super('T', "Adds scenery. Does nothing", location);
+		super('T', "Tree - (Adds scenery. Does nothing)", location);
 		// TODO Auto-generated constructor stub
 	}
 

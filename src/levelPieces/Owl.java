@@ -10,7 +10,7 @@ import gameEngine.Moveable;
 public class Owl extends GamePiece implements Moveable{
 
 	public Owl(int location) {
-		super('o', "Flies around board", location);
+		super('o', "Owl - (Flies around board)", location);
 	}
 
 	@Override
