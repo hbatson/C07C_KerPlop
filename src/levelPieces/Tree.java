@@ -14,7 +14,7 @@ public class Tree implements Drawable{
 
 	@Override
 	public void draw() {
-		System.out.println(symbol);
+		System.out.print(symbol);
 	}
 	
 	public int getLocation() {

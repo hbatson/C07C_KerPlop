@@ -5,7 +5,7 @@ import gameEngine.InteractionResult;
 
 public class Cannon extends GamePiece{
 
-	public Cannon(char symbol, String label, int location) {
+	public Cannon(int location) {
 		super('C', "Cannon - (Can shoot and damage you)", location);
 	}
 

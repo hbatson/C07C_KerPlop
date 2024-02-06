@@ -19,17 +19,35 @@ public class LevelSetup {
         this.movingPieces = new ArrayList<Moveable>();
         this.interactingPieces = new ArrayList<GamePiece>();
         System.out.println("Level " + levelNum + " Legend:");
-        System.out.println("  P - Player (you)");
+        System.out.println(" P - Player (you)");
+        this.playerStartLoc = 11;
         if (levelNum == 1) {
             Owl owl = new levelPieces.Owl(0);
+            board[0] = owl;
             Tree tree = new levelPieces.Tree(5);
+            board[5] = tree;
             Wizard wizard = new levelPieces.Wizard(15);
+            board[15] = wizard;
+            Ring ring = new levelPieces.Ring(1);
+            board[1] = ring;
             System.out.println(" " + owl);
             System.out.println(" " + tree);
             System.out.println(" " + wizard);
+            System.out.println(" " + ring);
             System.out.println("");
         } else if (levelNum == 2) {
-            
+            Cannon cannon = new levelPieces.Cannon(0);
+            board[0] = cannon;
+            Groundhog groundhog = new levelPieces.Groundhog(11);
+            board[11] = groundhog;
+            Tree tree = new levelPieces.Tree(5);
+            board[5] = tree;
+            Ring ring = new levelPieces.Ring(20);
+            board[20] = ring;
+            System.out.println(" " + cannon);
+            System.out.println(" " + groundhog);
+            System.out.println(" " + tree);
+            System.out.println(" " + ring);
         }
     }
 

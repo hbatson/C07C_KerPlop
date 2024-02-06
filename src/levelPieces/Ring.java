@@ -5,7 +5,7 @@ import gameEngine.InteractionResult;
 
 public class Ring extends GamePiece{
 
-	public Ring(char symbol, String label, int location) {
+	public Ring(int location) {
 		super('R', "Ring - (Proceed to next level)", location);
 	}
 

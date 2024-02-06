@@ -9,7 +9,7 @@ import gameEngine.Moveable;
 
 public class Groundhog extends GamePiece implements Moveable{
 
-	public Groundhog(char symbol, String label, int location) {
+	public Groundhog(int location) {
 		super('G', "Groundhog - (Can kill you)", location);
 	}
 
