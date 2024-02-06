@@ -13,7 +13,11 @@ public class Wizard extends GamePiece implements Moveable{
 
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		return InteractionResult.GET_POINT;
+        if (playerLocation == this.getLocation()) {
+            return InteractionResult.GET_POINT;
+        } else {
+            return InteractionResult.NONE;
+        }
 	}
 
 	@Override

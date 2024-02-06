@@ -15,7 +15,11 @@ public class Groundhog extends GamePiece implements Moveable{
 
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		return InteractionResult.KILL;
+        if (playerLocation == this.getLocation()) {
+            return InteractionResult.KILL;
+        } else {
+            return InteractionResult.NONE;
+        }
 	}
 
 	@Override

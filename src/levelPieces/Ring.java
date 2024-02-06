@@ -11,7 +11,11 @@ public class Ring extends GamePiece{
 
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		return InteractionResult.ADVANCE;
+        if (playerLocation == this.getLocation()) {
+            return InteractionResult.ADVANCE;
+        } else {
+            return InteractionResult.NONE;
+        }
 	}
 
 }
