@@ -29,4 +29,9 @@ public class Tree implements Drawable{
 		return location;
 	}
 	
+    @test void testTree() {
+        Tree tree = new Tree(10);
+        // confirm the tree is drawn on the board
+        assertEquals('T', tree.draw());
+    }
 }

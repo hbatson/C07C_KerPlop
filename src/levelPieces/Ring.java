@@ -26,4 +26,12 @@ public class Ring extends GamePiece{
         }
 	}
 
+    @test
+    public void testRing() {
+        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
+        Ring ring = new Ring(10);
+        // confirm the ring advances to the next level when touched
+        assertEquals(InteractionResult.ADVANCE, ring.interact(gameBoard, 10));
+    }
+
 }
