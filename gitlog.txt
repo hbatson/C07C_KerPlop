@@ -1,0 +1,91 @@
+commit 85c3bf47a18cf9ce09f1fdea09997b5568d9f27f
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 22:26:36 2024 -0700
+
+    piece requirements text doc
+
+commit 553cb2c08d44a6948f4767d4a4c93f8df69bebca
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 20:58:14 2024 -0700
+
+    Added comments for verbosity and headers
+
+commit d976d47bd8f814ba5a9695d50e96d22ba0d19dad
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 20:57:52 2024 -0700
+
+    Fixed bug where wizard cloned when moving
+
+commit 82a2bf00a078a15b71f354d6730be0ffedbe0566
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 20:36:19 2024 -0700
+
+    fixed functionality in a few pieces to only trigger with player on the
+    same tile
+
+commit fa355fb5be866218f2354cd44ac6e50f09ed7d08
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 20:26:55 2024 -0700
+
+    Game pieces now move and interact
+
+commit 7f79fe2a3f7830b4d8f2913abd97594b487cb610
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 19:41:32 2024 -0700
+
+    Game Pieces now appear on the board correctly, fixed bugs in pieces
+
+commit 919ba7db156499fbfc93f55cc70db8b3ddc7ed1e
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 19:25:08 2024 -0700
+
+    added createLevel method to levelPieces, game is now playable
+
+commit 2e38b4b25737c0dda0c4647d9aec9722b7cf1e31
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 19:16:00 2024 -0700
+
+    New pieces added to github
+
+commit 85e98ffbaee4eb6b16a9a852b131c089d89a7a66
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 19:11:03 2024 -0700
+
+    new piece, Cannon, and Tree changed
+
+commit e2d6ba508e7ec21ddd11fe66a2315bf13bb4b3c2
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 18:57:45 2024 -0700
+
+    new piece added
+
+commit b7a447826a8fca43a83eb72f5a0cee65a357950a
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 18:40:26 2024 -0700
+
+    Added the LevelSetup class with basic implimentation
+
+commit 62904222eb6be32d8d366e579f0b3835aeb1b910
+Merge: 47442a4 78fe98e
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 18:16:50 2024 -0700
+
+    Merge branch 'master' of https://github.com/hbatson/C07C_KerPlop
+
+commit 47442a4831b55bfed08680cac5dbe2f62c870b40
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Mon Feb 5 18:16:10 2024 -0700
+
+    3 pieces added
+
+commit 78fe98eeb9324e9901b43938fbca1d1742f9a121
+Author: Benjamin Kaylor <blkaylor22@gmail.com>
+Date:   Mon Feb 5 17:59:48 2024 -0700
+
+    Added the LevelSetup.java class, still missing implimentation
+
+commit 23dc3b4e193330ac0e40b07b421f413a2e461813
+Author: Henry Batson <henry_batson@mines.edu>
+Date:   Thu Feb 1 09:33:40 2024 -0700
+
+    Initial commit
