@@ -18,7 +18,10 @@ import levelPieces.Wizard;
  * @author Ben Kaylor
  */
 public class TestMovingPieces {
-
+	
+	/**
+	 * Tests that groundhog moves randomly
+	 */
 	@Test
     public void testGroundhogMove() {
         Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
@@ -29,6 +32,9 @@ public class TestMovingPieces {
         assertEquals(ground, gameBoard[ground.getLocation()]);
     }
 	
+	/**
+	 * Tests that owl moves randomly
+	 */
 	@Test
     public void testOwnMove() {
         Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];

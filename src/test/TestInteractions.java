@@ -21,6 +21,7 @@ import gameEngine.GameEngine;
  * @author Ben Kaylor
  */
 public class TestInteractions {
+	
 	/*
      * Test that the cannon can shoot the player
      */
@@ -55,6 +56,9 @@ public class TestInteractions {
         }
     }
     
+    /**
+     * Tests that Owl interacts as NONE when touching player
+     */
     @Test
     public void testOwlInteract() {
         Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
@@ -63,6 +67,9 @@ public class TestInteractions {
         assertEquals(InteractionResult.NONE, owl.interact(gameBoard, 10));
     }
     
+    /**
+     * Tests that ring advances player when touching player
+     */
     @Test
     public void testRing() {
         Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
@@ -71,6 +78,9 @@ public class TestInteractions {
         assertEquals(InteractionResult.ADVANCE, ring.interact(gameBoard, 10));
     }
     
+    /**
+     * Test that wizard gives point to player when touching player
+     */
     @Test
     public void testWizard() {
         Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
