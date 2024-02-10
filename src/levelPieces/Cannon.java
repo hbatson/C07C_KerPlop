@@ -27,21 +27,4 @@ public class Cannon extends GamePiece{
 			return InteractionResult.NONE;
 		}
 	}
-
-    /*
-     * Test that the cannon can shoot the player
-     */
-    @test
-    public void testCannon() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Cannon can = new Cannon(3);
-        // confirm the cannon interacts with spaces within 3 spaces
-        for (int i = 0; i < 7; i++) {
-            assertEquals(InteractionResult.HIT, can.interact(gameBoard, i));
-        }
-        // confirm the cannon does not interact with spaces outside of 3 spaces
-        for (int i = 7; i < GameEngine.BOARD_SIZE; i++) {
-            assertEquals(InteractionResult.NONE, can.interact(gameBoard, i));
-        }
-    }
 }

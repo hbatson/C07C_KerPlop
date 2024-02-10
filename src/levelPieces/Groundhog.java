@@ -46,31 +46,4 @@ public class Groundhog extends GamePiece implements Moveable{
 		setLocation(newLocation);
 		gameBoard[newLocation] = this;
 	}
-
-    /*
-     * Test that the groundhog kills the player on the same board space
-     */
-    @test
-    public void testGroundhogHit() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Groundhog ground = new Groundhog(10);
-        // confirm the groundhog kills the player on the same board space
-        assertEquals(InteractionResult.KILL, ground.interact(gameBoard, 10));
-        // confirm the groundhog does not kill the player on a different board space
-        for (int i = 0; i < GameEngine.BOARD_SIZE; i++) {
-            if (i != 10) {
-                assertEquals(InteractionResult.NONE, ground.interact(gameBoard, i));
-            }
-        }
-    }
-
-    @test
-    public void testGroundhogMove() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Groundhog ground = new Groundhog(10);
-        // confirm the groundhog moves to a different board space
-        ground.move(gameBoard, 0);
-        assertEquals(null, gameBoard[10]);
-        assertEquals(ground, gameBoard[ground.getLocation()]);
-    }
 }

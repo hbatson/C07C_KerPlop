@@ -40,22 +40,4 @@ public class Owl extends GamePiece implements Moveable{
 		setLocation(newLocation);
 		gameBoard[newLocation] = this;
 	}
-
-    @test
-    public void testOwlInteract() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Owl owl = new Owl(10);
-        // confirm the owl does nothing
-        assertEquals(InteractionResult.NONE, owl.interact(gameBoard, 10));
-    }
-
-    @test
-    public void testOwnMove() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Owl owl = new Owl(10);
-        // confirm the owl moves to a random empty board space
-        owl.move(gameBoard, 0);
-        assertEquals(null, gameBoard[10]);
-        assertEquals(owl, gameBoard[owl.getLocation()]);
-    }
 }

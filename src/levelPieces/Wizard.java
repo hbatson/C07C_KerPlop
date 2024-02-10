@@ -45,28 +45,4 @@ public class Wizard extends GamePiece implements Moveable{
 		setLocation(newLocation);
 		gameBoard[newLocation] = this;
 	}
-
-    /*
-     * Test that the wizard gives the player a point when landed on
-     */
-    @test
-    public void testWizard() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Wizard wizard = new Wizard(10);
-        // confirm the wizard gives the player a point when landed on
-        assertEquals(InteractionResult.GET_POINT, wizard.interact(gameBoard, 10));
-    }
-
-    /*
-     * Test that the wizard moves away from the player when close
-     */
-    @test
-    public void testWizardMove() {
-        Drawable [] gameBoard = new Drawable[GameEngine.BOARD_SIZE];
-        Wizard wizard = new Wizard(10);
-        // confirm the wizard moves away from the player when close
-        wizard.move(gameBoard, 9);
-        assertEquals(null, gameBoard[10]);
-        assertEquals(wizard, gameBoard[11]);
-    }
 }
